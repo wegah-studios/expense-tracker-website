@@ -11,6 +11,8 @@ const Footer = () => {
       sx={{
         padding: "20px",
         display: "flex",
+        gap: "20px",
+        flexWrap: "wrap",
         justifyContent: "space-between",
         borderRadius: "30px",
       }}
@@ -19,6 +21,7 @@ const Footer = () => {
         href={"/"}
         style={{
           display: "flex",
+          flexWrap: "wrap",
           alignItems: "center",
           gap: "10px",
           color: "inherit",
@@ -37,7 +40,13 @@ const Footer = () => {
           © 2025 All rights reserved
         </Typography>
       </Link>
-      <Box display={"flex"} gap={"10px"} alignItems={"center"}>
+      <Box
+        display={"flex"}
+        gap={"10px"}
+        alignItems={"center"}
+        justifyContent={"center"}
+        flexWrap={"wrap"}
+      >
         <Link
           style={{ color: "inherit", textDecoration: "none" }}
           href={"/legal/terms-of-service"}

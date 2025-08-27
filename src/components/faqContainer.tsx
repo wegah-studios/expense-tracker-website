@@ -1,10 +1,10 @@
 "use client";
 
-import loadFaqs from "@/lib/loadFaqs";
 import { Box } from "@mui/material";
 import React, { useState } from "react";
 import FaqItem from "./faqItem";
 import { FAQ } from "@/types/common";
+import SlideInComponent from "./slideInComponent";
 
 const FaqContainer = ({ faqs }: { faqs: FAQ[] }) => {
   const [open, setOpen] = useState<number | null>(0);
@@ -14,18 +14,26 @@ const FaqContainer = ({ faqs }: { faqs: FAQ[] }) => {
   };
 
   return (
-    <Box display={"flex"} flexDirection={"column"} gap={"20px"}>
+    <Box
+      component={"section"}
+      id="faq"
+      display={"flex"}
+      flexDirection={"column"}
+      gap={"20px"}
+    >
       {faqs.map(({ question, answer }, index) => (
-        <FaqItem
-          key={index}
-          {...{
-            index,
-            question,
-            answer,
-            open: open === index,
-            onClick: handleClick,
-          }}
-        />
+        <SlideInComponent key={index} delay={index / 10} width={"100%"}>
+          <FaqItem
+            key={index}
+            {...{
+              index,
+              question,
+              answer,
+              open: open === index,
+              onClick: handleClick,
+            }}
+          />
+        </SlideInComponent>
       ))}
     </Box>
   );

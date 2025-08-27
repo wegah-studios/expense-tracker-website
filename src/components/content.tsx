@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 import React from "react";
+import RiseUpComponent from "./riseUpComponent";
 
 const Content = ({
   reverse = false,
@@ -23,8 +24,9 @@ const Content = ({
       display={"flex"}
       gap={"20px"}
       flexDirection={reverse ? "row-reverse" : "row"}
+      flexWrap={"wrap"}
     >
-      <Box flex={1} display={"flex"} alignItems={"center"}>
+      <Box flexBasis={300} flexGrow={1} display={"flex"} alignItems={"center"}>
         <Box
           display={"flex"}
           flexDirection={"column"}
@@ -32,13 +34,19 @@ const Content = ({
           maxWidth={"450px"}
           m={"0 auto"}
         >
-          <Typography variant="h1" sx={{ color: "black", fontWeight: 500 }}>
-            {title}
-          </Typography>
-          <Typography sx={{ color: "black", letterSpacing: "0.1em" }}>{description}</Typography>
+          <RiseUpComponent>
+            <Typography variant="h1" sx={{ color: "black", fontWeight: 500 }}>
+              {title}
+            </Typography>
+          </RiseUpComponent>
+          <RiseUpComponent delay={0.2}>
+            <Typography sx={{ color: "black", letterSpacing: "0.1em" }}>
+              {description}
+            </Typography>
+          </RiseUpComponent>
         </Box>
       </Box>
-      <Box flex={1}>
+      <Box flexBasis={300} flexGrow={1}>
         <Box
           position={"relative"}
           maxWidth={"400px"}

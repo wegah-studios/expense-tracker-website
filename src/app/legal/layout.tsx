@@ -12,6 +12,7 @@ const LegalLayout = ({
     <Box>
       <Header />
       <Box
+        component={"main"}
         maxWidth={"1200px"}
         m={"auto"}
         p={"0 20px"}

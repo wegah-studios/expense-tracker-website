@@ -1,26 +1,38 @@
 [
   {
-    "question": "How can I send feedback",
-    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+    "question": "Is my data safe?",
+    "answer": "All your data is stored securely on your device and no data is ever shared or accessed by us or third-parties. Please review our privacy policy for more info."
   },
   {
-    "question": "How can I send feedback",
-    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+    "question": "How can I send feedback?",
+    "answer": "You can send feedback down below or navigating to prefrences '⚙️' -> 'Send feedback' on the app."
   },
   {
-    "question": "How can I send feedback",
-    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+    "question": "How do I add expenses?",
+    "answer": "There are 4 ways to add expenses to the app. You can import from M-pesa statements, import from M-pesa messages, import from an Excel File, and fill out the expense form manually all options are available when you press '+' on the app."
   },
   {
-    "question": "How can I send feedback",
-    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+    "question": "How do I import from M-pesa statements?",
+    "answer": "Open the M-pesa app and go to your statements (press 'view all' or 'view statements'), then export your statements, a pdf file will be generated. Download the pdf file and open the Expense tracker app, press the '+' and press 'M-pesa statement' select the pdf file and the expenses will be extracted automatically."
   },
   {
-    "question": "How can I send feedback",
-    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+    "question": "How do I add import from M-pesa messages?",
+    "answer": "Open the messages app and go to the M-pesa messages. Press and hold and select as many mpesa messages as you need and copy them. Open the Expense tracking app, press '+' and select 'M-pesa messages', paste your messages there and press 'done'.The expenses will be extracted automatically. "
   },
   {
-    "question": "How can I send feedback",
-    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+    "question": "How do I view insights?",
+    "answer": "Select the 'statistics' tab, you'll be able to view insights for a given date. To change the date press the date at the top and select one of the options from the dropdown, press the date to close the dropdown. Press the categories below the chart for more insights."
+  },
+  {
+    "question": "How do I add a budget?",
+    "answer": "Select the 'budget' tab, and press the add button. Set the budget duration, title and Amount then press 'save' to save the budget. Press the budget for more details and to view the budget categories. You can track multiple categories within one budget. Press and hold a budget or category to delete."
+  },
+  {
+    "question": "Can I automatically set the title and category for any expense?",
+    "answer": "Go to prefrences by pressing the '⚙️' in the homepage and press 'My dictionary'. 'Keywords' and 'Recipients' allow you to automatically set the title and category of an expense when importing from M-pesa. 'Keywords' work when the recipient of an expense contains the given keyword and 'Recipients' work when the recipient of an expense is an exact match."
+  },
+  {
+    "question": "What if an Error occurs?",
+    "answer": "Send feedback via the app or this website describing the issue. We are actively working to make the app better for all users. "
   }
 ]

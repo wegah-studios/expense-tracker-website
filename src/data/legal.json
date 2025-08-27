@@ -2,61 +2,77 @@
   "terms-of-service": [
     {
       "title": "Introduction",
-      "description": "Welcome to our terms of service. This policy explains how we collect, use, and protect your personal information when you visit our website or use our services."
+      "description": "Welcome to our terms of service. By using this app (“Expense Tracker”), you agree to the following terms:"
     },
     {
-      "title": "Acceptance of Terms",
-      "description": "By accessing or using our website or services, you agree to comply with and be bound by these terms of service."
+      "title": "1. License to Use",
+      "description": "We grant you a personal, non-exclusive, non-transferable, limited license to download and use the App for personal expense tracking purposes."
     },
     {
-      "title": "Use of Services",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "title": "2. Restrictions",
+      "description": "You agree not to: Modify, reverse-engineer, or tamper with the App’s code or functionality; Distribute, resell, or sublicense the App in any form; Use the App in any unlawful or unauthorized manner."
     },
     {
-      "title": "User Responsibilities",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "title": "3. Ownership",
+      "description": "The App, its design, and underlying code remain the intellectual property of the developer. Your use of the App does not transfer any ownership rights."
     },
     {
-      "title": "Intellectual Property",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "title": "4. Data Responsibility",
+      "description": "All data entered into the App is stored locally on your device. You are solely responsible for managing, backing up, and safeguarding your data."
     },
     {
-      "title": "Termination",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "title": "5. Disclaimer of Warranties",
+      "description": "The App is provided “as is” without any warranties of any kind, express or implied. We do not guarantee that the App will be error-free, uninterrupted, or meet your specific needs."
     },
     {
-      "title": "Saas console",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "title": "6. Limitation of Liability",
+      "description": "To the fullest extent permitted by law, we are not liable for any damages or losses arising from your use of the App, including but not limited to data loss, device issues, or unauthorized access to your device."
     },
     {
-      "title": "Billing",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "title": "7. Feedback",
+      "description": "If you provide feedback or suggestions, you grant us the right to use this input to improve the App without any obligation to compensate you."
+    },
+    {
+      "title": "8. Changes to Terms",
+      "description": "We reserve the right to update or modify these Terms of Use at any time. Continued use of the App after such changes constitutes your acceptance of the updated terms."
     }
   ],
   "privacy-policy": [
     {
       "title": "Introduction",
-      "description": "Welcome to our privacy policy. This policy explains how we collect, use, and protect your personal information when you visit our website or use our services."
+      "description": "We respect your privacy and are committed to protecting it. This Privacy Policy explains how our app 'Expense Tracker' handles your data and your personal information when you visit our website or use our app."
     },
     {
-      "title": "Information We Collect",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "title": "1. Data Storage",
+      "description": "All of your data — including expenses, receipts, images, and other related records — is stored securely on your device only. We do not collect, transmit, or store your data on our servers."
     },
     {
-      "title": "How We Use Your Information",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "title": "2. No Account or Login Required",
+      "description": "The App works fully offline. There is no login, registration, or account creation required to use it."
     },
     {
-      "title": "How We Protect Your Information",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "title": "3. Data Processing",
+      "description": "All expense tracking, parsing, and categorization features are executed locally on your device. No information is sent to external servers or third parties."
     },
     {
-      "title": "Your Choices",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "title": "4. Data Export",
+      "description": "If you choose to export your data, the files are generated on your device. Once exported, it is your responsibility to manage and share these files. The App does not control or monitor where your exported data is sent."
     },
     {
-      "title": "Data Sharing and Disclosure",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "title": "5. Feedback and Support",
+      "description": "If you send us feedback via email, your message will be handled by your own device’s email client. We do not automatically collect or track feedback or personal information."
+    },
+    {
+      "title": "6. Third-Party Services",
+      "description": "No data is shared with or accessed by third-parties at any time while using the app."
+    },
+    {
+      "title": "7. Security",
+      "description": "Because your data never leaves your device, its protection depends on the security of your device itself. We recommend using standard device security measures (such as a passcode or biometric lock) to safeguard your information."
+    },
+    {
+      "title": "8. Updates to this Policy",
+      "description": "This Privacy Policy may be updated from time to time to reflect changes in the App or legal requirements. Updates will be posted on our official website. Continued use of the App after changes constitutes your acceptance of the updated policy."
     }
   ]
 }

@@ -1,5 +1,6 @@
 "use client";
 
+import { useThemeContext } from "@/context/themeContext";
 import { Box, Button, Paper, Typography } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,6 +8,7 @@ import React, { useEffect, useState } from "react";
 
 const Header = ({ hidden = false }: { hidden?: boolean }) => {
   const [show, setShow] = useState<boolean>(!hidden);
+  const { toggleMode } = useThemeContext();
 
   useEffect(() => {
     if (hidden) {
@@ -28,8 +30,9 @@ const Header = ({ hidden = false }: { hidden?: boolean }) => {
     <Paper
       sx={{
         opacity: show ? 1 : 0,
-        position: "sticky",
+        position: hidden ? "fixed" : "sticky",
         top: 0,
+        width: "100%",
         padding: "10px 20px",
         zIndex: 1000,
         borderRadius: "0px",
@@ -41,10 +44,10 @@ const Header = ({ hidden = false }: { hidden?: boolean }) => {
       <Box
         maxWidth={"1200px"}
         m={"auto"}
-        p={"0 20px"}
         display={"flex"}
         justifyContent={"space-between"}
         alignItems={"center"}
+        gap={"20px"}
       >
         <Link
           href={"/"}
@@ -53,14 +56,27 @@ const Header = ({ hidden = false }: { hidden?: boolean }) => {
             color: "inherit",
             display: "flex",
             alignItems: "center",
-            gap: "20px",
+            gap: "10px",
           }}
         >
           <Box
             bgcolor={"info.main"}
-            sx={{ borderRadius: "10px", width: "40px", height: "40px" }}
+            sx={{
+              borderRadius: "10px",
+              width: "clamp(30px, 3vw, 40px)",
+              height: "clamp(30px, 3vw, 40px)",
+            }}
           >
-            <Image src={"/logo.png"} alt="logo" width={40} height={40} />
+            <Image
+              src={"/logo.png"}
+              alt="logo"
+              width={40}
+              height={40}
+              style={{
+                width: "clamp(30px, 3vw, 40px)",
+                height: "clamp(30px, 3vw, 40px)",
+              }}
+            />
           </Box>
           <Typography
             sx={{ fontWeight: 500, fontSize: "clamp(1rem, 2vw, 2rem)" }}
@@ -69,6 +85,8 @@ const Header = ({ hidden = false }: { hidden?: boolean }) => {
           </Typography>
         </Link>
         <Button
+          disableElevation
+          onClick={toggleMode}
           variant="contained"
           startIcon={
             <Image
