@@ -14,11 +14,14 @@ const Footer = () => {
         gap: "20px",
         flexWrap: "wrap",
         justifyContent: "space-between",
-        borderRadius: "30px",
+        borderRadius: "20px",
       }}
     >
       <Link
-        href={"/"}
+        href={
+          process.env.COMPANY_URL ||
+          "https://www.linkedin.com/in/joshua-wegah-67b83428b/"
+        }
         style={{
           display: "flex",
           flexWrap: "wrap",
