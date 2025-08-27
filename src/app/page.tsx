@@ -165,11 +165,11 @@ export const metadata: Metadata = {
     title: "Expense tracker",
     description:
       "Track your expenses, manage your budgets, and gain insights into your financial habits — all in one simple, powerful app.",
-    url: "https://yourdomain.com",
+    url: process.env.HOME_URL,
     siteName: "Expense tracker",
     images: [
       {
-        url: "https://yourdomain.com/promo.png",
+        url: process.env.HOME_URL + "/logo.png",
         width: 1440,
         height: 1024,
         alt: "Expense Tracker",
@@ -183,6 +183,6 @@ export const metadata: Metadata = {
     title: "Expense Tracker for M-pesa",
     description:
       "Track your expenses, manage your budgets, and gain insights into your financial habits — all in one simple, powerful app.",
-    images: ["https://yourdomain.com/promo.png"],
+    images: [process.env.HOME_URL + "/logo.png"],
   },
 };

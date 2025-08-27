@@ -22,6 +22,8 @@ const Footer = () => {
           process.env.COMPANY_URL ||
           "https://www.linkedin.com/in/joshua-wegah-67b83428b/"
         }
+        target="_blank"
+        rel="noopener noreferrer"
         style={{
           display: "flex",
           flexWrap: "wrap",

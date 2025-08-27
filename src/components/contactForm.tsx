@@ -62,6 +62,13 @@ const ContactForm = () => {
             onSubmit={handleFormSubmit}
             style={{ width: "100%", paddingBottom: "30px" }}
           >
+            <input
+              type="hidden"
+              name="form-name"
+              value="expense-tracker-contact"
+              style={{ opacity: 0 }}
+            />
+            <input name="bot-field" style={{ opacity: 0 }} />
             <Grid
               sx={{
                 width: "100%",
