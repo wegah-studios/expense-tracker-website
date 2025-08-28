@@ -14,13 +14,7 @@ const FaqContainer = ({ faqs }: { faqs: FAQ[] }) => {
   };
 
   return (
-    <Box
-      component={"section"}
-      id="faq"
-      display={"flex"}
-      flexDirection={"column"}
-      gap={"20px"}
-    >
+    <>
       {faqs.map(({ question, answer }, index) => (
         <SlideInComponent key={index} delay={index / 10} width={"100%"}>
           <FaqItem
@@ -35,7 +29,7 @@ const FaqContainer = ({ faqs }: { faqs: FAQ[] }) => {
           />
         </SlideInComponent>
       ))}
-    </Box>
+    </>
   );
 };
 

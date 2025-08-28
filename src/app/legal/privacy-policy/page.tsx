@@ -47,7 +47,7 @@ const PrivacyPolicy = () => {
 export default PrivacyPolicy;
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Expense tracker",
+  title: "Privacy policy | Expense tracker",
   description:
     "Track your expenses, manage your budgets, and gain insights into your financial habits — all in one simple, powerful app.",
   keywords: [
@@ -64,14 +64,14 @@ export const metadata: Metadata = {
     "tracker",
   ],
   openGraph: {
-    title: "Privacy Policy | Expense tracker",
+    title: "Privacy policy | Expense tracker",
     description:
       "Track your expenses, manage your budgets, and gain insights into your financial habits — all in one simple, powerful app.",
-    url: "https://yourdomain.com",
+    url: process.env.HOME_URL,
     siteName: "Expense tracker",
     images: [
       {
-        url: "https://yourdomain.com/promo.png",
+        url: process.env.HOME_URL + "/promo.png",
         width: 1440,
         height: 1024,
         alt: "Expense Tracker",
@@ -82,9 +82,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Privacy Policy | Expense tracker for M-pesa",
+    title: "Privacy policy | Expense Tracker",
     description:
       "Track your expenses, manage your budgets, and gain insights into your financial habits — all in one simple, powerful app.",
-    images: ["https://yourdomain.com/promo.png"],
+    images: [process.env.HOME_URL + "/promo.png"],
   },
 };

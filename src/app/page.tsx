@@ -134,7 +134,15 @@ const Home = () => {
           />
         </SlideInComponent>
         <Typography variant="h1">FAQs</Typography>
-        <FaqContainer faqs={faqs} />
+        <Box
+          component={"section"}
+          id="faq"
+          display={"flex"}
+          flexDirection={"column"}
+          gap={"20px"}
+        >
+          <FaqContainer faqs={faqs} />
+        </Box>
         <ContactForm />
         <Footer />
       </Box>
@@ -169,7 +177,7 @@ export const metadata: Metadata = {
     siteName: "Expense tracker",
     images: [
       {
-        url: process.env.HOME_URL + "/logo.png",
+        url: process.env.HOME_URL + "/promo.png",
         width: 1440,
         height: 1024,
         alt: "Expense Tracker",
@@ -180,9 +188,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Expense Tracker for M-pesa",
+    title: "Expense Tracker",
     description:
       "Track your expenses, manage your budgets, and gain insights into your financial habits — all in one simple, powerful app.",
-    images: [process.env.HOME_URL + "/logo.png"],
+    images: [process.env.HOME_URL + "/promo.png"],
   },
 };
