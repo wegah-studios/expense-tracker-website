@@ -84,22 +84,27 @@ const Header = ({ hidden = false }: { hidden?: boolean }) => {
             Expense Tracker
           </Typography>
         </Link>
-        <Button
-          disableElevation
-          onClick={toggleMode}
-          variant="contained"
-          startIcon={
-            <Image
-              src={"/playstore.png"}
-              width={20}
-              height={20}
-              alt="playstore logo"
-            />
+        <Link
+          href={
+            "https://play.google.com/apps/testing/com.wegah_studios.expense_tracker"
           }
-          size="small"
         >
-          Download
-        </Button>
+          <Button
+            disableElevation
+            variant="contained"
+            startIcon={
+              <Image
+                src={"/playstore.png"}
+                width={20}
+                height={20}
+                alt="playstore logo"
+              />
+            }
+            size="small"
+          >
+            Download
+          </Button>
+        </Link>
       </Box>
     </Paper>
   );

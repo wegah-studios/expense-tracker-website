@@ -58,7 +58,7 @@ const Home = () => {
                 variant="h1"
                 sx={{ fontWeight: 500, textAlign: "center" }}
               >
-                Expense Tracker For M-Pesa
+                Expense Tracker For M-Pesa (Alpha test)
               </Typography>
               <SlideInComponent delay={0.2}>
                 <Typography
@@ -72,9 +72,15 @@ const Home = () => {
                 >
                   Track your expenses, manage your budgets, and gain insights
                   into your financial habits — all in one simple, powerful app.
+                  (this is the alpha test send your email if you want to be
+                  included)
                 </Typography>
               </SlideInComponent>
-              <Link href={"/"}>
+              <Link
+                href={
+                  "https://play.google.com/apps/testing/com.wegah_studios.expense_tracker"
+                }
+              >
                 <Button
                   variant="contained"
                   size="large"
