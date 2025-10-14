@@ -13,7 +13,7 @@
   },
   {
     "question": "How do I import from M-pesa statements?",
-    "answer": "Open the M-pesa app and go to your statements (press 'view all' or 'view statements'), then export your statements, a pdf file will be generated. Download the pdf file and open the Expense tracker app, press the '+' and press 'M-pesa statement' select the pdf file and the expenses will be extracted automatically."
+    "answer": "Open the M-pesa app and go to your statements (press 'view all' or 'view statements'), then export your statements, a pdf file will be generated. Download the pdf file and open the Qwantu app, press the '+' and press 'M-pesa statement' select the pdf file and the expenses will be extracted automatically."
   },
   {
     "question": "How do I add import from M-pesa messages?",

@@ -6,15 +6,15 @@ import Header from "@/components/header";
 import RiseUpComponent from "@/components/riseUpComponent";
 import SlideInComponent from "@/components/slideInComponent";
 import loadFaqs from "@/lib/loadFaqs";
-import { CallEnd } from "@mui/icons-material";
-import { Box, Button, Grid, TextField, Typography } from "@mui/material";
+import { EastRounded } from "@mui/icons-material";
+import { Box, Button, Typography } from "@mui/material";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const Home = () => {
-  const faqs = loadFaqs();
+  const faqs = loadFaqs(5);
   return (
     <>
       <Header hidden />
@@ -58,7 +58,7 @@ const Home = () => {
                 variant="h1"
                 sx={{ fontWeight: 500, textAlign: "center" }}
               >
-                Expense Tracker For M-Pesa (Alpha test)
+                Qwantu - Expense Tracker
               </Typography>
               <SlideInComponent delay={0.2}>
                 <Typography
@@ -70,16 +70,17 @@ const Home = () => {
                     letterSpacing: "0.1em",
                   }}
                 >
-                  Track your expenses, manage your budgets, and gain insights
-                  into your financial habits — all in one simple, powerful app.
-                  (this is the alpha test send your email if you want to be
-                  included)
+                  Automatically track your spending, manage your budgets, and
+                  gain insights into your financial habits — all in one simple,
+                  powerful app.
                 </Typography>
               </SlideInComponent>
               <Link
                 href={
                   "https://play.google.com/apps/testing/com.wegah_studios.expense_tracker"
                 }
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Button
                   variant="contained"
@@ -140,14 +141,29 @@ const Home = () => {
           />
         </SlideInComponent>
         <Typography variant="h1">FAQs</Typography>
-        <Box
-          component={"section"}
-          id="faq"
-          display={"flex"}
-          flexDirection={"column"}
-          gap={"20px"}
-        >
+        <Box display={"flex"} flexDirection={"column"} gap={"20px"}>
           <FaqContainer faqs={faqs} />
+          <Box
+            display={"flex"}
+            flexDirection={"column"}
+            gap={"10px"}
+            justifyContent={"center"}
+            alignItems={"center"}
+          >
+            <Link
+              href={"/help"}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+                color: "inherit",
+                textDecoration: "none",
+              }}
+            >
+              <Typography>View More</Typography>
+              <EastRounded />
+            </Link>
+          </Box>
         </Box>
         <ContactForm />
         <Footer />
@@ -159,10 +175,11 @@ const Home = () => {
 export default Home;
 
 export const metadata: Metadata = {
-  title: "Expense tracker",
+  title: "Qwantu",
   description:
-    "Track your expenses, manage your budgets, and gain insights into your financial habits — all in one simple, powerful app.",
+    "Automatically track your spending, manage your budgets, and gain insights into your financial habits — all in one simple, powerful app.",
   keywords: [
+    "qwantu",
     "wegah",
     "wegah studios",
     "kenya",
@@ -176,17 +193,17 @@ export const metadata: Metadata = {
     "tracker",
   ],
   openGraph: {
-    title: "Expense tracker",
+    title: "Qwantu",
     description:
-      "Track your expenses, manage your budgets, and gain insights into your financial habits — all in one simple, powerful app.",
+      "Automatically track your spending, manage your budgets, and gain insights into your financial habits — all in one simple, powerful app.",
     url: process.env.HOME_URL,
-    siteName: "Expense tracker",
+    siteName: "Qwantu",
     images: [
       {
-        url: process.env.HOME_URL + "/promo.png",
-        width: 1440,
+        url: process.env.HOME_URL + "/logo.png",
+        width: 1024,
         height: 1024,
-        alt: "Expense Tracker",
+        alt: "Qwantu logo",
       },
     ],
     locale: "en_US",
@@ -194,9 +211,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Expense Tracker",
+    title: "Qwantu",
     description:
-      "Track your expenses, manage your budgets, and gain insights into your financial habits — all in one simple, powerful app.",
-    images: [process.env.HOME_URL + "/promo.png"],
+      "Automatically track your spending, manage your budgets, and gain insights into your financial habits — all in one simple, powerful app.",
+    images: [process.env.HOME_URL + "/logo.png"],
   },
 };

@@ -1,1 +1,1 @@
-The official website for [Expense Tracker](https://expense-tracker-wegah-studios.netlify.app) by[Wegah Studios](https://wegah-studios.netlify.app)
+The official website for [Qwantu](https://qwantu.wegahstudios.com/) by [Wegah Studios](https://wegah-studios.netlify.app)

@@ -6,7 +6,7 @@ import { Box, Button, Grid, TextField, Typography } from "@mui/material";
 import SlideInComponent from "./slideInComponent";
 import { CallEnd, Mail } from "@mui/icons-material";
 
-const ContactForm = () => {
+const ContactForm = ({ helpMode = false }: { helpMode?: boolean }) => {
   const [submitted, setSubmitted] = useState<boolean>(false);
   const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -97,7 +97,7 @@ const ContactForm = () => {
                     variant="h1"
                     sx={{ color: "black", fontWeight: 500 }}
                   >
-                    Contact Us
+                    {helpMode ? "Need Assistance?" : "Contact Us" }
                   </Typography>
                 </RiseUpComponent>
                 <RiseUpComponent delay={0.2}>

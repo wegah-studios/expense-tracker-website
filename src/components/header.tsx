@@ -1,6 +1,5 @@
 "use client";
 
-import { useThemeContext } from "@/context/themeContext";
 import { Box, Button, Paper, Typography } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,7 +7,6 @@ import React, { useEffect, useState } from "react";
 
 const Header = ({ hidden = false }: { hidden?: boolean }) => {
   const [show, setShow] = useState<boolean>(!hidden);
-  const { toggleMode } = useThemeContext();
 
   useEffect(() => {
     if (hidden) {
@@ -81,13 +79,15 @@ const Header = ({ hidden = false }: { hidden?: boolean }) => {
           <Typography
             sx={{ fontWeight: 500, fontSize: "clamp(1rem, 2vw, 2rem)" }}
           >
-            Expense Tracker
+            Qwantu
           </Typography>
         </Link>
         <Link
           href={
             "https://play.google.com/apps/testing/com.wegah_studios.expense_tracker"
           }
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <Button
             disableElevation

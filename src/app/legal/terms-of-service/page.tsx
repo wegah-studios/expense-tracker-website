@@ -47,9 +47,8 @@ const TermsOfService = () => {
 export default TermsOfService;
 
 export const metadata: Metadata = {
-  title: "Terms of service | Expense tracker",
-  description:
-    "Track your expenses, manage your budgets, and gain insights into your financial habits — all in one simple, powerful app.",
+  title: "Terms of service | Qwantu",
+  description: "Our terms of service",
   keywords: [
     "wegah",
     "wegah studios",
@@ -64,17 +63,17 @@ export const metadata: Metadata = {
     "tracker",
   ],
   openGraph: {
-    title: "Terms of service | Expense tracker",
+    title: "Terms of service | Qwantu",
     description:
-      "Track your expenses, manage your budgets, and gain insights into your financial habits — all in one simple, powerful app.",
+      "Automatically track your spending, manage your budgets, and gain insights into your financial habits — all in one simple, powerful app.",
     url: process.env.HOME_URL,
-    siteName: "Expense tracker",
+    siteName: "Qwantu",
     images: [
       {
-        url: process.env.HOME_URL + "/promo.png",
-        width: 1440,
+        url: process.env.HOME_URL + "/logo.png",
+        width: 1024,
         height: 1024,
-        alt: "Expense Tracker",
+        alt: "Qwantu",
       },
     ],
     locale: "en_US",
@@ -82,9 +81,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Terms of service | Expense tracker",
+    title: "Terms of service | Qwantu",
     description:
-      "Track your expenses, manage your budgets, and gain insights into your financial habits — all in one simple, powerful app.",
-    images: [process.env.HOME_URL + "/promo.png"],
+      "Automatically track your spending, manage your budgets, and gain insights into your financial habits — all in one simple, powerful app.",
+    images: [process.env.HOME_URL + "/logo.png"],
   },
 };
