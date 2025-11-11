@@ -103,7 +103,7 @@ const Home = () => {
         <SlideInComponent>
           <Content
             title="Track your spending with ease"
-            description="Easily track expenses from M-pesa messages and M-pesa statements. Whether it’s transport, groceries, or a subscription, our intuitive design makes keeping track of your money effortless."
+            description="Automatically track your expenses from M-pesa messages and M-pesa statements. Whether it’s transport, groceries, or a subscription, our intuitive design makes keeping track of your money effortless."
             image="/pic1.png"
           />
         </SlideInComponent>
