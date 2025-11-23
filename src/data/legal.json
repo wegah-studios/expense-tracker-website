@@ -51,27 +51,31 @@
       "description": "The App works fully offline. There is no login, registration, or account creation required to use it."
     },
     {
-      "title": "3. Data Processing",
+      "title": "3. Automatic Expense capture",
+      "description": "This is an opt-in feature that allows the app to automatically capture expenses from 'Mpesa'. Only Messages received from 'Mpesa' are used and of those, only the ones with a specific format are processed by the app. No sms message is accessed outside the device at any point, all processing is done natively on the device by the app. All your data is only available on your device no external storage is used."
+    },
+    {
+      "title": "4. Data Processing",
       "description": "All expense tracking, parsing, and categorization features are executed locally on your device. No information is sent to external servers or third parties."
     },
     {
-      "title": "4. Data Export",
+      "title": "5. Data Export",
       "description": "If you choose to export your data, the files are generated on your device. Once exported, it is your responsibility to manage and share these files. The App does not control or monitor where your exported data is sent."
     },
     {
-      "title": "5. Feedback and Support",
+      "title": "6. Feedback and Support",
       "description": "If you send us feedback via email, your message will be handled by your own device’s email client. We do not automatically collect or track feedback or personal information."
     },
     {
-      "title": "6. Third-Party Services",
+      "title": "7. Third-Party Services",
       "description": "No data is shared with or accessed by third-parties at any time while using the app."
     },
     {
-      "title": "7. Security",
+      "title": "8. Security",
       "description": "Because your data never leaves your device, its protection depends on the security of your device itself. We recommend using standard device security measures (such as a passcode or biometric lock) to safeguard your information."
     },
     {
-      "title": "8. Updates to this Policy",
+      "title": "9. Updates to this Policy",
       "description": "This Privacy Policy may be updated from time to time to reflect changes in the App or legal requirements. Updates will be posted on our official website. Continued use of the App after changes constitutes your acceptance of the updated policy."
     }
   ]
