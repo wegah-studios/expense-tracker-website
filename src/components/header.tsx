@@ -5,7 +5,13 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
-const Header = ({ hidden = false }: { hidden?: boolean }) => {
+const Header = ({
+  hidden = false,
+  actionUrl,
+}: {
+  hidden?: boolean;
+  actionUrl: string;
+}) => {
   const [show, setShow] = useState<boolean>(!hidden);
 
   useEffect(() => {
@@ -22,7 +28,6 @@ const Header = ({ hidden = false }: { hidden?: boolean }) => {
 
       return () => document.removeEventListener("scroll", () => {});
     }
-    alert(process.env);
   }, []);
 
   return (
@@ -84,7 +89,7 @@ const Header = ({ hidden = false }: { hidden?: boolean }) => {
           </Typography>
         </Link>
         <Link
-          href={process.env.APP_URL || "/#"}
+          href={actionUrl || "/#"}
           target="_blank"
           rel="noopener noreferrer"
         >

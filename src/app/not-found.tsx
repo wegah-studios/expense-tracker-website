@@ -9,7 +9,7 @@ import React from "react";
 const NotFound = () => {
   return (
     <>
-      <Header />
+      <Header actionUrl={process.env.APP_URL as string} />
       <Box
         component={"main"}
         maxWidth={"1200px"}

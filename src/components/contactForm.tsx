@@ -4,27 +4,29 @@ import React, { useState } from "react";
 import RiseUpComponent from "./riseUpComponent";
 import { Box, Button, Grid, TextField, Typography } from "@mui/material";
 import SlideInComponent from "./slideInComponent";
-import { CallEnd, Mail } from "@mui/icons-material";
+import { CallEnd, Error, Mail } from "@mui/icons-material";
 
 const ContactForm = ({ helpMode = false }: { helpMode?: boolean }) => {
-  const [submitted, setSubmitted] = useState<boolean>(false);
+  const [formState, setFormState] = useState<"" | "submitted" | "error">("");
   const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const formData = new FormData(event.currentTarget);
-    const body = new URLSearchParams(
-      Array.from(formData.entries()) as [string, string][]
-    ).toString();
     try {
+      const formData = new FormData(event.currentTarget);
+      const body = new URLSearchParams(
+        Array.from(formData.entries()) as [string, string][]
+      ).toString();
       await fetch("/__forms.html", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body,
       });
-      setSubmitted(true);
+      setFormState("submitted");
     } catch (error) {
       console.error(error);
+      setFormState("error");
     }
   };
+
   return (
     <RiseUpComponent>
       <Box
@@ -36,7 +38,7 @@ const ContactForm = ({ helpMode = false }: { helpMode?: boolean }) => {
         display={"flex"}
         gap={"20px"}
       >
-        {submitted ? (
+        {!!formState ? (
           <Box
             flex={1}
             display={"flex"}
@@ -45,16 +47,26 @@ const ContactForm = ({ helpMode = false }: { helpMode?: boolean }) => {
             alignItems={"center"}
             gap={"10px"}
           >
-            <Mail sx={{ color: "black", fontSize: "clamp(2rem, 4vw, 4rem)" }} />
+            {formState === "submitted" ? (
+              <Mail
+                sx={{ color: "black", fontSize: "clamp(2rem, 4vw, 4rem)" }}
+              />
+            ) : (
+              <Error sx={{ color: "error.main", fontSize: "2rem" }} />
+            )}
             <Typography variant="h2" sx={{ color: "black" }}>
-              Message Sent
+              {formState === "submitted"
+                ? "Message Sent"
+                : "An error occured :("}
             </Typography>
             <Button
               color="info"
               variant="outlined"
-              onClick={() => setSubmitted(false)}
+              onClick={() => setFormState("")}
             >
-              Send another message
+              {formState === "submitted"
+                ? "Send another message"
+                : "Try again."}
             </Button>
           </Box>
         ) : (
@@ -97,7 +109,7 @@ const ContactForm = ({ helpMode = false }: { helpMode?: boolean }) => {
                     variant="h1"
                     sx={{ color: "black", fontWeight: 500 }}
                   >
-                    {helpMode ? "Need Assistance?" : "Contact Us" }
+                    {helpMode ? "Need Assistance?" : "Contact Us"}
                   </Typography>
                 </RiseUpComponent>
                 <RiseUpComponent delay={0.2}>

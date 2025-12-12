@@ -17,7 +17,7 @@ const Home = () => {
   const faqs = loadFaqs(5);
   return (
     <>
-      <Header hidden />
+      <Header hidden actionUrl={process.env.APP_URL as string} />
       <Box
         component={"main"}
         maxWidth={"1200px"}
@@ -76,7 +76,7 @@ const Home = () => {
                 </Typography>
               </SlideInComponent>
               <Link
-                href={process.env.APP_URL || "/#"}
+                href={process.env.APP_URL || "/"}
                 target="_blank"
                 rel="noopener noreferrer"
               >
