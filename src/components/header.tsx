@@ -83,7 +83,7 @@ const Header = ({ hidden = false }: { hidden?: boolean }) => {
           </Typography>
         </Link>
         <Link
-          href={process.env.APP_URL || "/"}
+          href={process.env.APP_URL || "/#"}
           target="_blank"
           rel="noopener noreferrer"
         >
