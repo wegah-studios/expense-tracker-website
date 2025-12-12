@@ -83,9 +83,7 @@ const Header = ({ hidden = false }: { hidden?: boolean }) => {
           </Typography>
         </Link>
         <Link
-          href={
-            "https://play.google.com/apps/testing/com.wegah_studios.expense_tracker"
-          }
+          href={process.env.APP_URL || "/"}
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -76,9 +76,7 @@ const Home = () => {
                 </Typography>
               </SlideInComponent>
               <Link
-                href={
-                  "https://play.google.com/apps/testing/com.wegah_studios.expense_tracker"
-                }
+                href={process.env.APP_URL || "/"}
                 target="_blank"
                 rel="noopener noreferrer"
               >
