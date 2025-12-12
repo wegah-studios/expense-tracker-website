@@ -22,6 +22,7 @@ const Header = ({ hidden = false }: { hidden?: boolean }) => {
 
       return () => document.removeEventListener("scroll", () => {});
     }
+    alert(process.env);
   }, []);
 
   return (
